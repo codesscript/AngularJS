@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Expressions</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+ <div ng-init="cost=30">
+      <label>First_name       </label><input ng-model="firstname" type="text"></br>
+      <label>last_name        </label><input ng-model="lastname" type="text"></br>
+      <label>Rollno           </label><input ng-model="rollno" type="text"></br>
+      <label>quantity of book </label><input ng-model="quantity" type="text">
+
+      <p>{{'cost of book '+ cost+'rs'}}</p>
+      <p>Hello :{{ firstname+ " " + lastname }}!</p>
+      <p>rollno: {{ rollno}}</p>
+     <p>total cost of book :{{ cost*quantity+'rs'}}</p>
+ </div>
+</body>
+</html>

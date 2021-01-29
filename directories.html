@@ -1,0 +1,20 @@
+<html ng-app="">
+<head>
+  <title>index.html</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+<div ng-app = "" ng-init = "cars = [{models:'[Fiesta,Focus,Mustang]',name:'Ford'},
+         {models:'[320,X3,X5]',name:'BMW'}, {models:'[500,Panda]',name:'Fiat'}]">
+         <p>Enter your Name: <input type = "text" ng-model = "name"></p>
+         <p>Hello <span ng-bind = "name"></span>!</p>
+         <p>List of Car with models:</p>
+
+         <ol>
+            <li ng-repeat = "car in cars">
+               {{ 'car name: ' + car.name + ', models: ' + car.models }}
+            </li>
+         </ol>
+      </div>
+</body>
+</html>
